@@ -2,7 +2,6 @@
 
 A customizable Flutter widget that allows multiple expansion tiles/cards with flexible control over expansion states. Ideal for building collapsible lists or accordions with enhanced UI and better user experience.
 
-!\[preview gif or screenshot here if available]
 
 ---
 

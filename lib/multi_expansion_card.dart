@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 
 class MultipleExpansionCard extends StatefulWidget {
-  const MultipleExpansionCard({super.key, required this.titles, required this.childrens, this.initialExpanded = const {0: false}});
+  const MultipleExpansionCard(
+      {super.key,
+      required this.titles,
+      required this.childrens,
+      this.initialExpanded = const {0: false}});
   final List<Widget> titles;
   final List<Widget> childrens;
   final Map<int, bool> initialExpanded;
@@ -16,7 +20,8 @@ class _MultipleExpansionCardState extends State<MultipleExpansionCard> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    controllers = List.generate(widget.childrens.length, (index) => ExpansionTileController());
+    controllers = List.generate(
+        widget.childrens.length, (index) => ExpansionTileController());
     for (int index in widget.initialExpanded.keys) {
       if (widget.initialExpanded[index] == true) {
         expandedIndex = index;
@@ -28,7 +33,9 @@ class _MultipleExpansionCardState extends State<MultipleExpansionCard> {
   @override
   Widget build(BuildContext context) {
     if (widget.titles.length != widget.childrens.length) {
-      throw Exception(['titles length and childrens length must be equal condition is not true']);
+      throw Exception([
+        'titles length and childrens length must be equal condition is not true'
+      ]);
     }
     return ListView.builder(
       shrinkWrap: true,
@@ -38,15 +45,19 @@ class _MultipleExpansionCardState extends State<MultipleExpansionCard> {
         return Padding(
           padding: const EdgeInsets.only(bottom: 8.0),
           child: ExpansionTile(
-            collapsedShape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(7)),
+            collapsedShape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(7)),
             childrenPadding: EdgeInsets.all(6),
             backgroundColor: Colors.white,
             collapsedBackgroundColor: Colors.white,
             tilePadding: EdgeInsets.zero,
-            shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
+            shape:
+                const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
             key: Key(index.toString()),
             controller: controllers[index],
-            title: Padding(padding: const EdgeInsets.only(left: 8.0), child: widget.titles[index]),
+            title: Padding(
+                padding: const EdgeInsets.only(left: 8.0),
+                child: widget.titles[index]),
             initiallyExpanded: expandedIndex == index,
             onExpansionChanged: (isExpanded) {
               if (isExpanded) {

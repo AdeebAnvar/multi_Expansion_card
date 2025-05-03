@@ -3,7 +3,8 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:multi_expansion_card/multi_expansion_card.dart';
 
 void main() {
-  testWidgets('MultipleExpansionCard expands and collapses correctly', (WidgetTester tester) async {
+  testWidgets('MultipleExpansionCard expands and collapses correctly',
+      (WidgetTester tester) async {
     await tester.pumpWidget(
       const MaterialApp(
         home: Scaffold(
