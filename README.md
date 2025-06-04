@@ -41,22 +41,17 @@ class ExamplePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('Multi Expansion Cards')),
-      body: ListView(
-        children: [
-          MultiExpansionCard(
-            title: Text("Card 1"),
-            children: [
-              ListTile(title: Text("Content for Card 1")),
+      body:  MultipleExpansionCard(
+            titles: [
+              Text('Card 1'),
+              Text('Card 2'),
             ],
-          ),
-          MultiExpansionCard(
-            title: Text("Card 2"),
-            children: [
-              ListTile(title: Text("Content for Card 2")),
+            childrens: [
+              Text('Content 1'),
+              Text('Content 2'),
             ],
+            initialExpanded: {0: true},
           ),
-        ],
-      ),
     );
   }
 }
