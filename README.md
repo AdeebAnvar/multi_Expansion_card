@@ -19,7 +19,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  multi_expansion_card: ^0.0.2
+  multi_expansion_card: ^0.0.3
 ```
 
 Then run:

@@ -1,6 +1,6 @@
 name: multi_expansion_card
 description: A customizable Flutter widget that allows multiple expansion tiles/cards with easy state management and styling.
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/AdeebAnvar/multi_expansion_card
 repository: https://github.com/AdeebAnvar/multi_expansion_card
 
