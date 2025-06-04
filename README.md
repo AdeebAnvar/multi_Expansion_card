@@ -1,16 +1,15 @@
-## 📦 multi\_expansion\_card
+## 📦 multi_expansion_card
 
 A customizable Flutter widget that allows multiple expansion tiles/cards with flexible control over expansion states. Ideal for building collapsible lists or accordions with enhanced UI and better user experience.
-
 
 ---
 
 ### ✨ Features
 
-* Expand/collapse multiple cards independently
-* Smooth animations
-* Customize card title, content, and style
-* Easy to integrate and use
+- Expand/collapse multiple cards independently
+- Smooth animations
+- Customize card title, content, and style
+- Easy to integrate and use
 
 ---
 
@@ -20,7 +19,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  multi_expansion_card: ^0.0.1
+  multi_expansion_card: ^0.0.2
 ```
 
 Then run:
@@ -84,7 +83,7 @@ Feel free to check [issues page](https://github.com/AdeebAnvar/multi_Expansion_c
 
 If you find this package useful, please consider supporting development by buying me a coffee:
 
-[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-%23FFDD00?logo=buy-me-a-coffee\&logoColor=black)](https://www.buymeacoffee.com/adeebanvar)
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-%23FFDD00?logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/adeebanvar)
 
 ---
 
